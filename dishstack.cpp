@@ -21,7 +21,7 @@ class DishStack
         {
             if(current == MAX_SIZE)
             {
-                cerr << "Stack of Dishes is Full!" << endl;
+                throw std::invalid_argument("Stack of Dishes is Full!");
             } else {
                 dish_arr[current] = value;
                 current++;
